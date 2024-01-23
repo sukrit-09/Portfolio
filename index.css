@@ -498,7 +498,6 @@ header .navbar ul li a:hover {
   padding: 10px;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  
   transition: 0.2s;
 }
 
@@ -530,14 +529,14 @@ header .navbar ul li a:hover {
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
   .skills .container {
-    padding: 0;
+    padding: 2rem; /* Adjust padding for mobile view */
     margin: 0;
   }
 
   .skills .container .row {
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
-    padding: 2rem 0.2rem 2rem 0.2rem;
+    padding: 2rem; /* Adjust padding for mobile view */
     gap: 1rem;
   }
 
@@ -548,6 +547,7 @@ header .navbar ul li a:hover {
 }
 /* skills media queries ends*/
 /* skills section ends */
+
 
 
 /* education section starts */
@@ -674,22 +674,25 @@ header .navbar ul li a:hover {
 
 /* work section starts */
 .work {
-  /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
 }
+
 .work h2 {
   color: #fff;
   padding: 1rem;
 }
+
 .work .heading span {
   color: rgb(255, 230, 0);
 }
+
 .work .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 2rem;
 }
+
 .work .box-container .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
@@ -698,13 +701,15 @@ header .navbar ul li a:hover {
   overflow: hidden;
   height: 30rem;
 }
+
 .work .box-container .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 .work .box-container .box .content {
-  height: 100%;
+  height: 100%; /* Set a specific height for the content */
   width: 100%;
   position: absolute;
   top: 85%;
@@ -712,7 +717,9 @@ header .navbar ul li a:hover {
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
+  overflow-y: scroll; /* Add scroll for overflow content */
 }
+
 .work .box-container .box .content .tag {
   display: flex;
   flex-direction: row;
@@ -723,27 +730,33 @@ header .navbar ul li a:hover {
   padding-left: 1rem;
   background: #ffd900;
 }
+
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
 }
+
 .work .box-container .box:hover .content {
   top: 25%;
 }
+
 .work .desc {
   margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .work .desc p {
   font-size: 1.5rem;
 }
+
 .work .desc .btns {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
 }
+
 .work .desc .btns .btn {
   line-height: 0;
   display: inline;
@@ -754,13 +767,16 @@ header .navbar ul li a:hover {
   background: rgb(12, 12, 12);
   margin-right: 2rem;
 }
+
 .work .desc .btns .btn:hover {
   background: #310ae0f5;
 }
+
 .work .viewall {
   display: flex;
   justify-content: center;
 }
+
 .work .viewall .btn {
   position: relative;
   line-height: 0;
@@ -773,20 +789,24 @@ header .navbar ul li a:hover {
   box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
   text-align: center;
 }
+
 .work .viewall .btn span {
   font-weight: 600;
   font-size: 1.7rem;
   font-family: "Nunito", sans-serif;
 }
+
 .work .viewall .btn i {
   margin-left: 0.3rem;
   font-size: 1.5rem;
   transition: 0.3s;
 }
+
 .work .viewall .btn:hover {
   background: #fff;
   color: #000;
 }
+
 .work .viewall .btn:hover i {
   transform: translateX(5px);
 }
